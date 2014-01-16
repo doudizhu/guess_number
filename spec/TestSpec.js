@@ -17,6 +17,12 @@ describe("test result", function () {
         expect(judge_equal(compare_result)).toBe('猜测正确')
     })
 
+    it("should output 猜测正确 when the third time you are right", function () {
+        localStorage.guess_time = 3
+        var compare_result = '4A0B'
+        expect(judge_equal(compare_result)).toBe('猜测正确')
+    })
+
     it("should output 猜测正确 when the sixth time you are right", function () {
         localStorage.guess_time = 6
         var compare_result = '4A0B'
