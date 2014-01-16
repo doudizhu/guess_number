@@ -13,3 +13,9 @@ function inner_tip_to_html(content) {
     tip.innerHTML = content
     board.parentNode.appendChild(tip)
 }
+
+document.onkeydown = function(){
+    if(event.keyCode == 13){
+        judge_start()
+    }
+}
